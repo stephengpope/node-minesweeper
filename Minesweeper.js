@@ -139,14 +139,10 @@ class Minegrid {
 
       neighbors.forEach((pair, index) => {
 
-
-
           this.click(pair.x, pair.y);
 
       })
     }
-
-    console.log(num_mines);
   }
 }
 
@@ -194,12 +190,8 @@ class Minesweeper {
         break;
       }
 
-      //rl.close();
-
       this.getInputFromUser();
     });
-
-
   }
 
   start() {
