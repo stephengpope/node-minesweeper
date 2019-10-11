@@ -1,10 +1,3 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 
 class Minegrid {
 
@@ -166,6 +159,13 @@ class Minesweeper {
   getInputFromUser() {
 
     this.grid.print();
+
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
 
     rl.question('(type "h" for help)> ', (answer) => {
 
